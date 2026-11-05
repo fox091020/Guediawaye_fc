@@ -939,6 +939,35 @@
   line-height: 1;
 }
 
+.team-crest--red img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.team-crest img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.match-section .team-crest:not(.team-crest--red) {
+  border: 0;
+  background: transparent;
+}
+
+.match-section .team-crest:not(.team-crest--red) img {
+  width: 58px;
+  height: 58px;
+}
+
+.team-crest--red {
+  border: 0;
+  background: white;
+}
+
 @media (max-width: 600px) {
   .club-figures .container {
     width: min(calc(100% - 24px), 520px);
@@ -1036,6 +1065,20 @@
   .figures-grid p {
     display: none;
   }
+}
+
+.current-match .opponent-crest {
+  overflow: hidden;
+  padding: 5px;
+  border: 0;
+  background: white;
+}
+
+.current-match .opponent-crest img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .honours-grid article {
